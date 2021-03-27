@@ -1,7 +1,7 @@
 <script>
-  export let title = "default title"; //you can set default values for props this way
+  export let titleName = "default title"; //you can set default values for props this way
 </script>
 
 <div class="main-title">
-  <h2>{title}</h2>
+  <h2>{titleName}</h2>
 </div>

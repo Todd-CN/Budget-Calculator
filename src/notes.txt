@@ -1,0 +1,27 @@
+1. What is Svelte?
+
+Svelte is a small and fast JS framework. 
+Svelte compiles our code before we ship it
+
+Unlike traditional frameworks which do the work in the browswer,
+Svelte compiles that happens when we build an app
+
+Svelte shines it its simplicity. You end up writing less code
+compared to other frameworks. You end up writing straight-up vanilla
+JS
+
+2. How we can render lists in Svelte (Each blocks)
+
+For now, let's set up a dummy list in our App.svelte (fruits)
+
+In svelte, we use {#each...} {/each}
+
+For example, {#each fruits as fruit}...our logic...{/each}
+
+{#each fruits as fruit}
+whatever logic we place here will be implemented for each fruit in the fruits array, or each item in any given array
+{/each}
+
+If we want to access the value of each fruit/item in the array, we can again use the curly braces {} because Svelte allows us to do that
+
+Example: <h1> fruit: {fruit} </h1>
